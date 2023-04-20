@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nWQ-uA-5kQ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -414,10 +414,10 @@
             </objects>
             <point key="canvasLocation" x="1883" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Finance View Controller-->
         <scene sceneID="vHb-jQ-KJV">
             <objects>
-                <viewController id="nWQ-uA-5kQ" sceneMemberID="viewController">
+                <viewController id="nWQ-uA-5kQ" customClass="FinanceViewController" customModule="FINAL_ZhangzhiWang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smF-Ji-AAV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,6 +479,9 @@
                             <constraint firstItem="j6Q-pL-hax" firstAttribute="bottom" secondItem="nFS-Jb-83g" secondAttribute="bottom" constant="50" id="zae-qh-2wh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="voR-1C-KEK" id="hQs-JE-Wzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eic-hm-v0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

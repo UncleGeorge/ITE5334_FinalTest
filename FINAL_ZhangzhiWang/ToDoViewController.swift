@@ -11,6 +11,13 @@ class ToDoViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var todos: [(text: String, icon: String)] = [
+            ("Daily Meeting with the team", "orangeRing"),
+            ("Completing the prototype", "check"),
+            ("Find people for the user test", "orangeRing"),
+            ("Buy cookies for the kids", "blueRing"),
+            ("Pay electricity bill", "redRing")
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +38,14 @@ extension ToDoViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return todos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoTableViewCell", for: indexPath) as! TodoTableViewCell
         
-//        cell.textLabel?.text = "Row \(indexPath.row)"
+        cell.itemLabel.text = todos[indexPath.row].text
+        cell.itemIcon.image = UIImage(named: todos[indexPath.row].icon)
         
         return cell
     }

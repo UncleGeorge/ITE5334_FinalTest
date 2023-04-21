@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4664B429F308B0002D944D /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4664B329F308B0002D944D /* FSCalendar */; };
+		8D4664B629F30B80002D944D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4664B529F30B80002D944D /* CalendarViewController.swift */; };
 		8D4721CB29EF618A00E1AD63 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4721CA29EF618A00E1AD63 /* FacebookBasics */; };
 		8D4721CD29EF618A00E1AD63 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4721CC29EF618A00E1AD63 /* FacebookCore */; };
 		8D4721D129EF618A00E1AD63 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4721D029EF618A00E1AD63 /* FacebookLogin */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D4664B529F30B80002D944D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		8D4721D629EF6D3A00E1AD63 /* FINAL_ZhangzhiWang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FINAL_ZhangzhiWang.entitlements; sourceTree = "<group>"; };
 		8D5F6F2F29EF431B00DF53DA /* FINAL_ZhangzhiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FINAL_ZhangzhiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5F6F3229EF431B00DF53DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 				8D4721D129EF618A00E1AD63 /* FacebookLogin in Frameworks */,
 				8D4721D329EF618A00E1AD63 /* FacebookShare in Frameworks */,
 				8D4721CD29EF618A00E1AD63 /* FacebookCore in Frameworks */,
+				8D4664B429F308B0002D944D /* FSCalendar in Frameworks */,
 				8D4721CB29EF618A00E1AD63 /* FacebookBasics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +98,7 @@
 				8D5F6F3229EF431B00DF53DA /* AppDelegate.swift */,
 				8D5F6F3429EF431B00DF53DA /* SceneDelegate.swift */,
 				8D5F6F3629EF431B00DF53DA /* ViewController.swift */,
+				8D4664B529F30B80002D944D /* CalendarViewController.swift */,
 				8DC9081E29F031C400F78C40 /* ToDoViewController.swift */,
 				8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */,
 				8DCF9E7529F1C79400B8D60C /* FinanceViewController.swift */,
@@ -142,6 +147,7 @@
 				8D4721CC29EF618A00E1AD63 /* FacebookCore */,
 				8D4721D029EF618A00E1AD63 /* FacebookLogin */,
 				8D4721D229EF618A00E1AD63 /* FacebookShare */,
+				8D4664B329F308B0002D944D /* FSCalendar */,
 			);
 			productName = FINAL_ZhangzhiWang;
 			productReference = 8D5F6F2F29EF431B00DF53DA /* FINAL_ZhangzhiWang.app */;
@@ -173,6 +179,7 @@
 			mainGroup = 8D5F6F2629EF431B00DF53DA;
 			packageReferences = (
 				8D4721C729EF618A00E1AD63 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				8D4664B229F308B0002D944D /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 8D5F6F3029EF431B00DF53DA /* Products */;
 			projectDirPath = "";
@@ -212,6 +219,7 @@
 				8DCF9E7629F1C79400B8D60C /* FinanceViewController.swift in Sources */,
 				8D5F6F3529EF431B00DF53DA /* SceneDelegate.swift in Sources */,
 				8DCF9E8129F20B9100B8D60C /* NewReminderViewController.swift in Sources */,
+				8D4664B629F30B80002D944D /* CalendarViewController.swift in Sources */,
 				8DCF9E8529F224C700B8D60C /* UIViewController+FontSize.swift in Sources */,
 				8DCF9E8329F2111100B8D60C /* NewAmountViewController.swift in Sources */,
 				8DCF9E7829F1E1AC00B8D60C /* SettingsViewController.swift in Sources */,
@@ -435,6 +443,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8D4664B229F308B0002D944D /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		8D4721C729EF618A00E1AD63 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -446,6 +462,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8D4664B329F308B0002D944D /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D4664B229F308B0002D944D /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
 		8D4721CA29EF618A00E1AD63 /* FacebookBasics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D4721C729EF618A00E1AD63 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;

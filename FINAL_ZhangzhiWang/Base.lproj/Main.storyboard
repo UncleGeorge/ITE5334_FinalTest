@@ -68,16 +68,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="loginButton"/>
                                 <connections>
-                                    <segue destination="SlK-pG-a7e" kind="show" id="8dc-z8-gc9"/>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQc-Gp-q9V"/>
+                                    <segue destination="SlK-pG-a7e" kind="show" identifier="goToCalendar" id="8dc-z8-gc9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds9-bS-e3e" userLabel="Facebook Button" customClass="FBSDKImpressionLoggingButton">
                                 <rect key="frame" x="196" y="604" width="182" height="58"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="facebookButton"/>
-                                <connections>
-                                    <action selector="clickLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEP-Yc-bni"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or login with…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndu-bV-Wzr">
                                 <rect key="frame" x="156" y="579.66666666666663" width="81.333333333333314" height="14.333333333333371"/>
@@ -127,7 +125,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="ds9-bS-e3e" id="jPj-dI-z97"/>
+                        <outlet property="fbButton" destination="ds9-bS-e3e" id="QYm-Jl-Tsz"/>
+                        <outlet property="loginButton" destination="oOP-M4-qb7" id="qkx-Fh-Wd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,8 +140,30 @@
                     <view key="view" contentMode="scaleToFill" id="d7y-nM-Xeh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psg-Op-rhv">
+                                <rect key="frame" x="20" y="86" width="353" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="DarkBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHl-sS-JRj">
+                                <rect key="frame" x="20" y="122.33333333333333" width="353" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="GreyBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dKv-1Z-lGu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="psg-Op-rhv" firstAttribute="leading" secondItem="dKv-1Z-lGu" secondAttribute="leading" constant="20" id="4Av-no-UMT"/>
+                            <constraint firstItem="dKv-1Z-lGu" firstAttribute="trailing" secondItem="psg-Op-rhv" secondAttribute="trailing" constant="20" id="9d8-cX-oV3"/>
+                            <constraint firstItem="dKv-1Z-lGu" firstAttribute="trailing" secondItem="wHl-sS-JRj" secondAttribute="trailing" constant="20" id="EtQ-bT-3pD"/>
+                            <constraint firstItem="wHl-sS-JRj" firstAttribute="leading" secondItem="dKv-1Z-lGu" secondAttribute="leading" constant="20" id="Jok-Bh-ff7"/>
+                            <constraint firstItem="psg-Op-rhv" firstAttribute="top" secondItem="dKv-1Z-lGu" secondAttribute="top" constant="30" id="bKM-lH-ji3"/>
+                            <constraint firstItem="wHl-sS-JRj" firstAttribute="top" secondItem="psg-Op-rhv" secondAttribute="bottom" constant="10" id="iCo-tJ-EuZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c1J-ef-XbG"/>
                 </viewController>

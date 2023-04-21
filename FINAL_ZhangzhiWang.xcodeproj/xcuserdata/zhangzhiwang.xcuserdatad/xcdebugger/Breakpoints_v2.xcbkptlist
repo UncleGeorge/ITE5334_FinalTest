@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "06C0DFAB-B1DA-4E9A-9194-4CDE67594C52"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FINAL_ZhangzhiWang/NewAmountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "NewAmountViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - ab63e3190db6ca20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.nameTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - d0fb00b4dad712cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.nameTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - bc3347c2b3f9439"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.nameTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - fecc83f6920ee713"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.nameTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - cc9af6ad558079d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; FINAL_ZhangzhiWang.NewAmountViewController"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "137">
+               </Location>
+               <Location
+                  uuid = "DA7AE95B-DAD1-406D-9493-4CF52C55B31C - f7329a40b0c103cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FINAL_ZhangzhiWang.NewAmountViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FINAL_ZhangzhiWang.NewAmountViewController&gt;"
+                  moduleName = "FINAL_ZhangzhiWang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangzhiwang/Desktop/IOS%20Projects/FINAL_ZhangzhiWang/FINAL_ZhangzhiWang/NewAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

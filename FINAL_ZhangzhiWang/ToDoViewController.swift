@@ -21,6 +21,7 @@ class ToDoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        adjustFontSize()
 
         tableView.separatorStyle = .none
         
@@ -29,8 +30,18 @@ class ToDoViewController: UIViewController {
         
         tableView.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "TodoTableViewCell")
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToNewReminder" {
+            let destinationVC = segue.destination as! NewReminderViewController
+            destinationVC.delegate = self
+        }
+    }
 
 }
+
+
 
 extension ToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,7 +66,17 @@ extension ToDoViewController: UITableViewDataSource {
 extension ToDoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        print("Selected row at index: \(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: true)
+        SoundManager.shared.playClickSound()
     }
     
 }
+
+extension ToDoViewController: NewReminderDelegate {
+    func addNewReminder(data: String) {
+        todos.append((data, "orangeRing"))
+        tableView.reloadData()
+    }
+}
+
+

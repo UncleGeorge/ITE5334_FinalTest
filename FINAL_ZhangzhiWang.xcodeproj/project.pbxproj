@@ -23,6 +23,12 @@
 		8DCF9E7329F1C41F00B8D60C /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7129F1C41F00B8D60C /* FinanceTableViewCell.swift */; };
 		8DCF9E7429F1C41F00B8D60C /* FinanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7229F1C41F00B8D60C /* FinanceTableViewCell.xib */; };
 		8DCF9E7629F1C79400B8D60C /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7529F1C79400B8D60C /* FinanceViewController.swift */; };
+		8DCF9E7829F1E1AC00B8D60C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7729F1E1AC00B8D60C /* SettingsViewController.swift */; };
+		8DCF9E7C29F1E35D00B8D60C /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7B29F1E35D00B8D60C /* SoundManager.swift */; };
+		8DCF9E7F29F1E50500B8D60C /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DCF9E7E29F1E50500B8D60C /* click.mp3 */; };
+		8DCF9E8129F20B9100B8D60C /* NewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */; };
+		8DCF9E8329F2111100B8D60C /* NewAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8229F2111100B8D60C /* NewAmountViewController.swift */; };
+		8DCF9E8529F224C700B8D60C /* UIViewController+FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,12 @@
 		8DCF9E7129F1C41F00B8D60C /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
 		8DCF9E7229F1C41F00B8D60C /* FinanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceTableViewCell.xib; sourceTree = "<group>"; };
 		8DCF9E7529F1C79400B8D60C /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		8DCF9E7729F1E1AC00B8D60C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8DCF9E7B29F1E35D00B8D60C /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		8DCF9E7E29F1E50500B8D60C /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderViewController.swift; sourceTree = "<group>"; };
+		8DCF9E8229F2111100B8D60C /* NewAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAmountViewController.swift; sourceTree = "<group>"; };
+		8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FontSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +89,16 @@
 		8D5F6F3129EF431B00DF53DA /* FINAL_ZhangzhiWang */ = {
 			isa = PBXGroup;
 			children = (
+				8DCF9E7D29F1E4E400B8D60C /* Sounds */,
 				8D4721D629EF6D3A00E1AD63 /* FINAL_ZhangzhiWang.entitlements */,
 				8D5F6F3229EF431B00DF53DA /* AppDelegate.swift */,
 				8D5F6F3429EF431B00DF53DA /* SceneDelegate.swift */,
 				8D5F6F3629EF431B00DF53DA /* ViewController.swift */,
 				8DC9081E29F031C400F78C40 /* ToDoViewController.swift */,
+				8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */,
 				8DCF9E7529F1C79400B8D60C /* FinanceViewController.swift */,
+				8DCF9E8229F2111100B8D60C /* NewAmountViewController.swift */,
+				8DCF9E7729F1E1AC00B8D60C /* SettingsViewController.swift */,
 				8D5F6F3829EF431B00DF53DA /* Main.storyboard */,
 				8D5F6F3B29EF431D00DF53DA /* Assets.xcassets */,
 				8D5F6F3D29EF431D00DF53DA /* LaunchScreen.storyboard */,
@@ -91,8 +107,18 @@
 				8DC9082129F04CB100F78C40 /* TodoTableViewCell.xib */,
 				8DCF9E7129F1C41F00B8D60C /* FinanceTableViewCell.swift */,
 				8DCF9E7229F1C41F00B8D60C /* FinanceTableViewCell.xib */,
+				8DCF9E7B29F1E35D00B8D60C /* SoundManager.swift */,
+				8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */,
 			);
 			path = FINAL_ZhangzhiWang;
+			sourceTree = "<group>";
+		};
+		8DCF9E7D29F1E4E400B8D60C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8DCF9E7E29F1E50500B8D60C /* click.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +191,7 @@
 				8D5F6F3F29EF431D00DF53DA /* LaunchScreen.storyboard in Resources */,
 				8DCF9E7429F1C41F00B8D60C /* FinanceTableViewCell.xib in Resources */,
 				8D5F6F3C29EF431D00DF53DA /* Assets.xcassets in Resources */,
+				8DCF9E7F29F1E50500B8D60C /* click.mp3 in Resources */,
 				8D5F6F3A29EF431B00DF53DA /* Main.storyboard in Resources */,
 				8DC9082329F04CB100F78C40 /* TodoTableViewCell.xib in Resources */,
 			);
@@ -184,6 +211,11 @@
 				8DC9082229F04CB100F78C40 /* TodoTableViewCell.swift in Sources */,
 				8DCF9E7629F1C79400B8D60C /* FinanceViewController.swift in Sources */,
 				8D5F6F3529EF431B00DF53DA /* SceneDelegate.swift in Sources */,
+				8DCF9E8129F20B9100B8D60C /* NewReminderViewController.swift in Sources */,
+				8DCF9E8529F224C700B8D60C /* UIViewController+FontSize.swift in Sources */,
+				8DCF9E8329F2111100B8D60C /* NewAmountViewController.swift in Sources */,
+				8DCF9E7829F1E1AC00B8D60C /* SettingsViewController.swift in Sources */,
+				8DCF9E7C29F1E35D00B8D60C /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

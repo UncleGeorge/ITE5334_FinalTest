@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        adjustFontSize()
 
         let fbLoginButton = FBLoginButton()
 //        loginButton.center = view.center
@@ -26,8 +26,5 @@ class ViewController: UIViewController {
         view.addSubview(fbLoginButton)
     }
     
-
-    
-
 }
 

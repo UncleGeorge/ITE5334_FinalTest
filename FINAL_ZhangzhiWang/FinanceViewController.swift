@@ -12,14 +12,15 @@ class FinanceViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var movements: [(title: String, icon: String, description: String, amount: String)] = [
-            ("John Doe", "blueBall", "Incoming payment | 10.01.2021", "+ 10,00€"),
-            ("Amazon", "orangeBall", "Outgoing payment | 10.01.2021", "- 25,00€"),
-            ("Ikea", "orangeBall", "Outgoing payment | 10.01.2021", "-150,00€"),
-            ("Mc Donalds NYC", "orangeBall", "Outgoing payment | 10.01.2021", "- 15,00€")
+            ("John Doe", "blueBall", "Incoming payment | 10.01.2021", "+1000€"),
+            ("Amazon", "orangeBall", "Outgoing payment | 10.01.2021", "-2500€"),
+            ("Ikea", "orangeBall", "Outgoing payment | 10.01.2021", "-15000€"),
+            ("Mc Donalds NYC", "orangeBall", "Outgoing payment | 10.01.2021", "-1500€")
         ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        adjustFontSize()
 
         tableView.separatorStyle = .none
         
@@ -27,6 +28,14 @@ class FinanceViewController: UIViewController {
         tableView.delegate = self
         
         tableView.register(UINib(nibName: "FinanceTableViewCell", bundle: nil), forCellReuseIdentifier: "FinanceTableViewCell")
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToNewAmount" {
+            let destinationVC = segue.destination as! NewAmountViewController
+            destinationVC.delegate = self
+        }
     }
 
 }
@@ -55,9 +64,17 @@ extension FinanceViewController: UITableViewDataSource {
 
 extension FinanceViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        print("Selected row at index: \(indexPath.row)")
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        SoundManager.shared.playClickSound()
     }
     
+}
+
+extension FinanceViewController: NewAmountDelegate {
+    func addNewAmount(data: (name: String, amount: Int)) {
+        movements.append((data.name, "orangeBall", "Outgoing payment | 10.01.2021", "-\(data.amount)€"))
+        tableView.reloadData()
+    }
 }
 

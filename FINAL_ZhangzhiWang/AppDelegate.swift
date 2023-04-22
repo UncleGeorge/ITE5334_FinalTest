@@ -8,6 +8,7 @@
 import UIKit
 import FacebookCore
 
+// Below is the App Delegate code provided by facebook
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(

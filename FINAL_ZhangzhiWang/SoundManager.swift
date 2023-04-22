@@ -4,9 +4,11 @@ import AVFoundation
 
 class SoundManager {
     
+    // Implement the singleton pattern by defining a static property called "shared"
     static let shared = SoundManager()
     private var audioPlayer: AVAudioPlayer?
     
+    // ensure SoundManager can only be instantiated internally, guarantees only one instance exists
     private init() {
         setupAudioPlayer()
     }
@@ -24,6 +26,7 @@ class SoundManager {
     }
     
     func playClickSound() {
+        // If the user has set button sound effect, will be played on click
         if UserDefaults.standard.bool(forKey: "soundEffectEnabled") {
             audioPlayer?.play()
         }

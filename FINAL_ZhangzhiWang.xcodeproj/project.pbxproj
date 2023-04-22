@@ -31,6 +31,7 @@
 		8DCF9E8129F20B9100B8D60C /* NewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */; };
 		8DCF9E8329F2111100B8D60C /* NewAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8229F2111100B8D60C /* NewAmountViewController.swift */; };
 		8DCF9E8529F224C700B8D60C /* UIViewController+FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */; };
+		8DD5556E29F3487B00288B6B /* UITextField+LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5556D29F3487B00288B6B /* UITextField+LeftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		8DCF9E8029F20B9000B8D60C /* NewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderViewController.swift; sourceTree = "<group>"; };
 		8DCF9E8229F2111100B8D60C /* NewAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAmountViewController.swift; sourceTree = "<group>"; };
 		8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FontSize.swift"; sourceTree = "<group>"; };
+		8DD5556D29F3487B00288B6B /* UITextField+LeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+LeftView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				8DCF9E7229F1C41F00B8D60C /* FinanceTableViewCell.xib */,
 				8DCF9E7B29F1E35D00B8D60C /* SoundManager.swift */,
 				8DCF9E8429F224C700B8D60C /* UIViewController+FontSize.swift */,
+				8DD5556D29F3487B00288B6B /* UITextField+LeftView.swift */,
 			);
 			path = FINAL_ZhangzhiWang;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				8DC9082229F04CB100F78C40 /* TodoTableViewCell.swift in Sources */,
 				8DCF9E7629F1C79400B8D60C /* FinanceViewController.swift in Sources */,
 				8D5F6F3529EF431B00DF53DA /* SceneDelegate.swift in Sources */,
+				8DD5556E29F3487B00288B6B /* UITextField+LeftView.swift in Sources */,
 				8DCF9E8129F20B9100B8D60C /* NewReminderViewController.swift in Sources */,
 				8D4664B629F30B80002D944D /* CalendarViewController.swift in Sources */,
 				8DCF9E8529F224C700B8D60C /* UIViewController+FontSize.swift in Sources */,

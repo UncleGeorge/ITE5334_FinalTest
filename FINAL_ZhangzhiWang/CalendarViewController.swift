@@ -16,9 +16,11 @@ class CalendarViewController: UIViewController {
         super.viewDidLoad()
         
         calendar.appearance.headerTitleColor = UIColor.gray
-        
         calendar.appearance.weekdayTextColor = UIColor.gray
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        SoundManager.shared.playClickSound()
+    }
 }
 

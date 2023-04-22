@@ -11,6 +11,7 @@ class ToDoViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // todos data
     var todos: [(text: String, icon: String)] = [
             ("Daily Meeting with the team", "orangeRing"),
             ("Completing the prototype", "check"),
@@ -29,6 +30,10 @@ class ToDoViewController: UIViewController {
         tableView.delegate = self
         
         tableView.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "TodoTableViewCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        SoundManager.shared.playClickSound()
     }
     
     
@@ -72,6 +77,7 @@ extension ToDoViewController: UITableViewDelegate {
     
 }
 
+// Use the data returned from the next page to generate a new todo item
 extension ToDoViewController: NewReminderDelegate {
     func addNewReminder(data: String) {
         todos.append((data, "orangeRing"))

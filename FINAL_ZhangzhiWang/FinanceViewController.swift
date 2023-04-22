@@ -11,6 +11,7 @@ class FinanceViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // movements data
     var movements: [(title: String, icon: String, description: String, amount: String)] = [
             ("John Doe", "blueBall", "Incoming payment | 10.01.2021", "+1000€"),
             ("Amazon", "orangeBall", "Outgoing payment | 10.01.2021", "-2500€"),
@@ -28,6 +29,10 @@ class FinanceViewController: UIViewController {
         tableView.delegate = self
         
         tableView.register(UINib(nibName: "FinanceTableViewCell", bundle: nil), forCellReuseIdentifier: "FinanceTableViewCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        SoundManager.shared.playClickSound()
     }
     
     
@@ -71,6 +76,7 @@ extension FinanceViewController: UITableViewDelegate {
     
 }
 
+// Use the data returned from the next page to generate a new movement item
 extension FinanceViewController: NewAmountDelegate {
     func addNewAmount(data: (name: String, amount: Int)) {
         movements.append((data.name, "orangeBall", "Outgoing payment | 10.01.2021", "-\(data.amount)€"))
